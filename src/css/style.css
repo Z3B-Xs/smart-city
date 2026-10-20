@@ -30,7 +30,7 @@ html {
 }
 
 body {
-    background-color: var(--background);
+    background-color: gray;
 }
 
 /*===== Video =====*/
@@ -161,4 +161,32 @@ footer p span {
     background-image: linear-gradient(to right, red, white, green);
     background-clip: text;
     color: transparent;
+}
+/*------------------------ new page------------------- */
+.dashboard{
+display: grid;
+grid-template-areas: 
+        "header header"
+         "main main"
+         "footer footer"  
+;
+
+}
+
+
+.dashboard .main{
+    grid-area: main;
+place-items: center;
+grid-template-columns: repeat(3,1fr);
+grid-template-rows: repeat(2,1fr);
+}
+.dashboard .footer{
+    grid-area: footer;
+}
+.dashboard .header{
+    grid-area: header;
+}
+.dashboard .main h2{
+
+left: 400px;
 }
