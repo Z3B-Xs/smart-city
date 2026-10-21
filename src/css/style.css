@@ -30,11 +30,12 @@ html {
 }
 
 body {
-    background-color: gray;
+    background: linear-gradient(to right, rgba(217, 210, 210, 0.956) ,rgba(64, 52, 52, 0.5));
     min-height: 100vh;
     min-height: 100dvh;
-    display: flex;
-    flex-direction: column;
+    
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 
 /*===== Video =====*/
@@ -196,17 +197,25 @@ footer p span {
     grid-template-rows: repeat(2, 1fr);
 }
 
-.dashboard .footer {
+ .footer {
     grid-area: footer;
+   
+    
 }
 
 .dashboard .header {
     grid-area: header;
 }
 
-.dashboard .main h2 {
+.dashboard .main .plan{
+height: 300px;
+    border: 2px solid black;
+    width:25%;
+    gap: 20px;
+    grid-column: span 2;
+    border-radius: 7px;
+    padding: 20px;
 
-    left: 400px;
 }
 
 /*===== History =====*/

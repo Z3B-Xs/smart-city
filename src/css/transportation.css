@@ -1,0 +1,62 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+
+.body{
+
+  display: grid;
+  
+
+}
+
+
+
+
+.dashboard {
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "main main"
+        "footer footer";
+    
+
+}
+
+
+.dashboard .main {
+    grid-area: main;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+ .footer {
+    grid-area: footer;
+   
+    
+}
+
+.dashboard .header {
+    grid-area: header;
+}
+
+.dashboard .main .plan{
+height: 300px;
+    border: 2px solid black;
+    width:25%;
+   
+   
+    border-radius: 7px;
+    padding: 20px;
+
+
+}
+
+.dashboard .main .plan .styling{
+gap: 20px;
+
+}
