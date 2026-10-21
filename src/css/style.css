@@ -63,7 +63,11 @@ body {
 
 /*===== Header =====*/
 
-header {
+.hamburger {
+    display: none;
+}
+
+.laptop-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -124,10 +128,10 @@ header {
 }
 
 .logo-container h1:hover span {
-    background-image: linear-gradient(to right, white);
+    background-image: none;
     color: transparent;
     background-clip: text;
-    /* -webkit-text-stroke: 2px red; */
+    /* -webkit-text-stroke: 1px white; */
 }
 
 nav {
@@ -172,31 +176,144 @@ footer p span {
     background-clip: text;
     color: transparent;
 }
+
 /*------------------------ new page------------------- */
-.dashboard{
-display: grid;
-grid-template-areas: 
+.dashboard {
+    display: grid;
+    grid-template-areas:
         "header header"
-         "main main"
-         "footer footer"  
-;
+        "main main"
+        "footer footer"
+    ;
 
 }
 
 
-.dashboard .main{
+.dashboard .main {
     grid-area: main;
-place-items: center;
-grid-template-columns: repeat(3,1fr);
-grid-template-rows: repeat(2,1fr);
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
-.dashboard .footer{
+
+.dashboard .footer {
     grid-area: footer;
 }
-.dashboard .header{
+
+.dashboard .header {
     grid-area: header;
 }
-.dashboard .main h2{
 
-left: 400px;
+.dashboard .main h2 {
+
+    left: 400px;
+}
+
+
+
+
+/*===== Responsive =====*/
+
+@media (max-width: 600px) {
+
+    .laptop-header {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        background-color: transparent;
+    }
+
+    .hamburger #menu-toggle {
+        position: absolute;
+        opacity: 0;
+    }
+
+    .hamburger label {
+        position: relative;
+        z-index: 997;
+        color: red;
+        font-size: 26px;
+        cursor: pointer;
+    }
+
+    .side-bar {
+        z-index: 996;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 250px;
+        height: 100vh;
+        background-color: black;
+        transform: translateX(-100%);
+        transition: 0.25s ease-in-out;
+    }
+
+    .side-bar nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 50px;
+    }
+
+    #menu-toggle:checked~.side-bar {
+        transform: translateX(0);
+        transition: transform 0.25s ease-in-out;
+    }
+
+    .logo-container-phone {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo-container-phone img {
+        width: 90px;
+        transition: 0.25s ease-in-out;
+    }
+
+    .logo-container-phone img:hover {
+        transform: scale(1.15);
+    }
+
+    .logo-container-phone h1 {
+        font-size: 26px;
+        color: #ff0000;
+        font-family: "exo2";
+        transition: 0.25s ease-in-out;
+    }
+
+    .logo-container-phone h1 span {
+        color: #ffffff;
+        font-family: "IBM";
+        transition: 0.25s ease-in-out;
+        text-shadow: none;
+    }
+
+    .logo-container-phone h1:hover {
+        color: #000000;
+        text-shadow: 0 0 5px #ffffff;
+    }
+
+    .logo-container-phone h1:hover span {
+        color: #00ff00;
+        text-shadow: none;
+    }
+
+    nav a {
+        margin-left: 0;
+    }
+
+    footer {
+        z-index: 1002;
+    }
+
 }
