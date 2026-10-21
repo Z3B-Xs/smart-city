@@ -6,43 +6,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/style.css">
     <title>Services</title>
-</head>
+</head> 
 
-<body>
+<body class="services-light-theme">
 
     <header>
-
-        <div class="laptop-header">
-
-            <div class="logo-container">
-
-                <a href="index.html"><img src="assests/icons/Amman Skyline Emblem Logo.png" alt="logo"></a>
-                <h1>Smart City <span>AMMAN</span></h1>
-
-            </div>
-
-            <div class="navbar">
-
-                <nav>
-                    <a href="index.html">Home</a>
-                    <a href="services.html">Services</a>
-                    <a href="transportation.html">Transportation</a>
-                    <a href="events.html">Events</a>
-                    <a href="history.html">History</a>
-                    <a href="contact.html">Contact</a>
-                </nav>
-
-            </div>
-
+        <div class="logo-container">
+            <a href="index.html"><img src="assests/icons/Amman Skyline Emblem Logo.png" alt="logo"></a>
+            <h1>Smart City <span>AMMAN</span></h1>
         </div>
 
+        <div class="navbar">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="transportation.html">Transportation</a>
+                <a href="events.html">Events</a>
+                <a href="history.html">History</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
     </header>
+                
+    <main class="services-page">
+        
+        <section class="services-header">
+            <h1>City Services</h1>
+            <p>Find, request and pay for the services you use every day.</p>
+            
+            <div class="search-box">
+                <input type="text" placeholder="What do you need help with?">
+            </div>
+        </section>
 
+        <section class="services-filters">
+            <button class="filter-btn active">All</button>
+            <button class="filter-btn">Municipal</button>
+            <button class="filter-btn">Health</button>
+            <button class="filter-btn">Utilities</button>
+            <button class="filter-btn">Environment</button>
+        </section>
 
-    <footer>
-        <p>Smart City <span>AMMAN</span> &copy; 2026</p>
-    </footer>
+    <section class="cards-grid">
+        
+        <div class="service-card">
+            <div class="card-icon">⚠</div>
+            <span class="card-category">MUNICIPAL</span>
+            <h3>Report a Problem</h3>
+            <p>Report potholes, broken street lights or missed garbage pickup, with a photo.</p>
+            <a href="#" class="card-btn">Report</a>
+        </div>
+
+        <div class="service-card">
+            <div class="card-icon">📄</div>
+            <span class="card-category">MUNICIPAL</span>
+            <h3>Permits & Licenses</h3>
+            <p>Apply for building permits, business licenses and event permits online.</p>
+            <a href="#" class="card-btn">Apply</a>
+        </div>
+
+        <div class="service-card">
+            <div class="card-icon">💳</div>
+            <span class="card-category">UTILITIES</span>
+            <h3>Bills & Fines</h3>
+            <p>Pay water, electricity and waste fees, or settle traffic fines, in one place.</p>
+            <a href="#" class="card-btn">Pay</a>
+        </div>
+
+        <div class="service-card">
+            <div class="card-icon">🏥</div>
+            <span class="card-category">HEALTH</span>
+            <h3>Health Services</h3>
+            <p>Find the nearest clinic or 24-hour pharmacy and book a vaccination appointment.</p>
+            <a href="#" class="card-btn">Find</a>
+        </div>
+
+        <div class="service-card">
+            <div class="card-icon">🗑</div>
+            <span class="card-category">ENVIRONMENT</span>
+            <h3>Waste Collection</h3>
+            <p>Check the pickup schedule for your neighborhood and request bulk collection.</p>
+            <a href="#" class="card-btn">View schedule</a>
+        </div>
+
+        <div class="service-card">
+            <div class="card-icon">🌱</div>
+            <span class="card-category">ENVIRONMENT</span>
+            <h3>Parks & Recycling</h3>
+            <p>Locate parks, recycling points and live air quality readings near you.</p>
+            <a href="#" class="card-btn">Explore</a>
+        </div>
+
+    </section>
+
+    <section class="bottom-info-cards">
+        
+        <div class="info-card">
+            <h3>Can’t find what you need?</h3>
+            <p>Send us a message and the right department will get back to you.</p>
+            <a href="contact.html" class="info-btn black-btn">Contact us</a>
+        </div>
+
+        <div class="info-card">
+            <h3>Emergency & useful numbers</h3>
+            <p>Police, civil defense, ambulance and city hotlines, always one tap away.</p>
+            <a href="#" class="info-btn outline-btn">View numbers</a>
+        </div>
+
+    </section>
+    </main>
 
 </body>
-
 </html>
