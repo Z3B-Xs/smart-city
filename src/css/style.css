@@ -71,7 +71,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* border-bottom: 2px solid #ffffff; */
+    border-bottom: 2px solid #ffffff;
     padding: 10px;
     margin: 10px;
     position: sticky;
@@ -117,7 +117,7 @@ body {
     transition: 0.5s ease-in-out;
 }
 
-.logo-container h1:hover {
+/* .logo-container h1:hover {
     background-image: linear-gradient(90deg,
             #000000,
             #ff0000,
@@ -131,8 +131,8 @@ body {
     background-image: none;
     color: transparent;
     background-clip: text;
-    /* -webkit-text-stroke: 1px white; */
-}
+    -webkit-text-stroke: 1px white;
+} */
 
 nav {
     display: flex;
@@ -209,8 +209,120 @@ footer p span {
     left: 400px;
 }
 
+/*===== History =====*/
 
+main {
+    display: flex;
+    justify-content: center;
+}
 
+.info-container {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-container .info {
+    display: flex;
+}
+
+.info-container .info .circle {
+    position: relative;
+}
+
+.info-container .info .circle img {
+    width: 25px;
+}
+
+.info-container .info .first-circle::before {
+    content: "";
+    height: 5px;
+    width: 4px;
+    position: absolute;
+    top: -1px;
+    left: 10px;
+    background-color: white;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    z-index: -1;
+}
+
+.info-container .info .circle::after {
+    content: "";
+    height: 81.5px;
+    width: 4px;
+    position: absolute;
+    bottom: -34px;
+    left: 10px;
+    background-color: white;
+    border-radius: 3px;
+    z-index: -1;
+}
+
+.info-container .info .last-circle::after {
+    content: "";
+    height: 5px;
+    width: 4px;
+    position: absolute;
+    top: 21px;
+    left: 10px;
+    background-color: white;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    z-index: -1;
+}
+
+.info-container .info .infos {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.explore {
+    background-color: rgb(215, 215, 215);
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+    min-width: 350px;
+}
+
+.explore h2 {
+    color: #800020;
+    font-family: "inter";
+}
+
+.explore .landmark {
+    padding: 5px;
+    font-family: "exo2"
+}
+
+.explore .landmark h3 {
+    padding-top: 20px;
+    font-size: 22px;
+    border-top: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.explore .landmark p {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.explore .plan-visit {
+    background-color: #800020;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    width: 120px;
+}
+
+.explore .plan-visit a {
+    text-decoration: none;
+    color: #ffffff;
+}
 
 /*===== Responsive =====*/
 
@@ -299,13 +411,13 @@ footer p span {
     }
 
     .logo-container-phone h1:hover {
-        color: #000000;
-        text-shadow: 0 0 5px #ffffff;
+        color: #00ff00;
     }
 
     .logo-container-phone h1:hover span {
-        color: #00ff00;
-        text-shadow: none;
+
+        color: #000000;
+        text-shadow: 0 0 5px #ffffff;
     }
 
     nav a {
