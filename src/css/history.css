@@ -100,15 +100,36 @@ main {
     color: rgba(0, 0, 0, 0.6);
 }
 
-.explore .plan-visit {
-    background-color: #800020;
-    border-radius: 15px;
-    padding: 10px;
-    text-align: center;
-    width: 120px;
+.explore .plan-visit button {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    padding: 16px 30px;
+    color: #800020;
+    background: transparent;
+    border: 2px solid #800020;
+    border-radius: 10px;
+    transition: color .25s ease;
+    cursor: pointer;
 }
 
-.explore .plan-visit a {
-    text-decoration: none;
+.explore .plan-visit button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: #800020;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition:
+        transform .3s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.explore .plan-visit button:hover {
     color: #ffffff;
+}
+
+.explore .plan-visit button:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
 }
