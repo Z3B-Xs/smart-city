@@ -30,7 +30,7 @@ html {
 }
 
 body {
-    background: linear-gradient(to right, rgba(217, 210, 210, 0.956) ,rgba(64, 52, 52, 0.5));
+    background: linear-gradient(to right, rgba(255, 253, 253, 0.956) ,rgba(240, 238, 238, 0.5));
     min-height: 100vh;
     min-height: 100dvh;
     
@@ -179,44 +179,7 @@ footer p span {
 }
 
 /*------------------------ new page------------------- */
-.dashboard {
-    display: grid;
-    grid-template-areas:
-        "header header"
-        "main main"
-        "footer footer"
-    ;
 
-}
-
-
-.dashboard .main {
-    grid-area: main;
-    place-items: center;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-}
-
- .footer {
-    grid-area: footer;
-   
-    
-}
-
-.dashboard .header {
-    grid-area: header;
-}
-
-.dashboard .main .plan{
-height: 300px;
-    border: 2px solid black;
-    width:25%;
-    gap: 20px;
-    grid-column: span 2;
-    border-radius: 7px;
-    padding: 20px;
-
-}
 
 /*===== History =====*/
 
