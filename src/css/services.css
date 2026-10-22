@@ -2,6 +2,11 @@
            (Services Page)
    ========================================= */
 
+body.services-light-theme,
+html {
+    background: #ffffff !important;
+}
+
 .services-light-theme header {
     background-color: #ffffff;
     color: #111;
@@ -9,12 +14,14 @@
     justify-content: space-between !important;
     align-items: center !important;
     padding: 15px 5% !important;
-    background: linear-gradient(135deg, #000000a8 50%, #8a0e23a3 85%, #0e6b329f 100%) !important;
+    background: linear-gradient(135deg, #000000d2 30%, #8a0e23d4 85%, #0e6b32dc 100%) !important;
 }
 
 .services-page {
+    display: block !important;
+    width: 100% !important;
     max-width: 1100px;
-    background-color: #f9f9f9;
+    background-color: #ffffff; 
     margin: 0 auto;
     padding: 50px 20px;
 }
@@ -81,7 +88,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
     margin-top: 40px;
-    gap: 30px;
+    gap: 50px;
 }
 
 .service-card {
@@ -150,7 +157,6 @@
     background-color: #a00b23; 
 }
 
-
 @media (max-width: 900px) {
     .cards-grid {
         grid-template-columns: repeat(2, 1fr); 
@@ -168,7 +174,7 @@
 
 .bottom-info-cards {
     display: flex;
-    gap: 25px;
+    gap: 50px;
     margin-top: 50px;
 }
 
@@ -230,20 +236,23 @@
     }
 }
 
-.services-light-theme .navbar nav a {
-    color: #111; 
-    font-weight: bold;
-    transition: color 0.3s ease;
+
+.services-light-theme .navbar nav {
     display: flex !important;
     gap: 25px !important;
+}
+
+.services-light-theme .navbar nav a {
     color: #ffffff !important;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    text-decoration: none;
 }
 
 .services-light-theme .navbar nav a:hover {
-    color: #c8102e; 
     color: #4CAF50 !important;
 }
 
 .services-light-theme .logo-container h1 {
-    color: #111; 
+    color: #ffffff !important; 
 }
