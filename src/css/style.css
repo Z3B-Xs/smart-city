@@ -31,6 +31,7 @@ html {
 
 body {
     background: linear-gradient(to right, rgba(217, 210, 210, 0.956), rgba(64, 52, 52, 0.5));
+    background: linear-gradient(to right, rgba(255, 253, 253, 0.956) ,rgba(240, 238, 238, 0.5));
     min-height: 100vh;
     min-height: 100dvh;
 
@@ -180,7 +181,7 @@ nav a:hover {
     box-shadow: 0 -15px 25px rgba(255, 255, 255, 1);
 }
 
-.cards-container .card {
+.cards-container .home-card {
     position: relative;
     box-sizing: border-box;
     overflow: hidden;
@@ -196,7 +197,7 @@ nav a:hover {
     margin: 10px;
 }
 
-.card::before {
+.home-card::before {
     content: '';
     position: absolute;
     inset: 0;
@@ -208,20 +209,20 @@ nav a:hover {
         transform 0.45s cubic-bezier(0.65, 0, 0.35, 1);
 }
 
-.card:hover {
+.home-card:hover {
     transform: translateY(-4px);
 }
 
-.card:hover::before {
+.home-card:hover::before {
     transform: scaleY(1);
     transform-origin: top;
 }
 
-.cards-container .card h2 {
+.cards-container .home-card h2 {
     color: #000000;
 }
 
-.cards-container .card p {
+.cards-container .home-card p {
     color: #ffffff;
 }
 
@@ -258,13 +259,13 @@ nav a:hover {
     transition-delay: .45s;
 }
 
-.card:hover .top,
-.card:hover .bottom {
+.home-card:hover .top,
+.home-card:hover .bottom {
     width: 100%;
 }
 
-.card:hover .right,
-.card:hover .left {
+.home-card:hover .right,
+.home-card:hover .left {
     height: 100%;
 }
 
@@ -285,6 +286,124 @@ footer p span {
     background-image: linear-gradient(to right, red, white, green);
     background-clip: text;
     color: transparent;
+}
+
+/*------------------------ new page------------------- */
+
+
+/*===== History =====*/
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.info-container {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-container .info {
+    display: flex;
+}
+
+.info-container .info .circle {
+    position: relative;
+}
+
+.info-container .info .circle img {
+    width: 25px;
+}
+
+.info-container .info .first-circle::before {
+    content: "";
+    height: 5px;
+    width: 4px;
+    position: absolute;
+    top: -1px;
+    left: 10px;
+    background-color: white;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    z-index: -1;
+}
+
+.info-container .info .circle::after {
+    content: "";
+    height: 81.5px;
+    width: 4px;
+    position: absolute;
+    bottom: -34px;
+    left: 10px;
+    background-color: white;
+    border-radius: 3px;
+    z-index: -1;
+}
+
+.info-container .info .last-circle::after {
+    content: "";
+    height: 5px;
+    width: 4px;
+    position: absolute;
+    top: 21px;
+    left: 10px;
+    background-color: white;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    z-index: -1;
+}
+
+.info-container .info .infos {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.explore {
+    background-color: rgb(215, 215, 215);
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+    min-width: 350px;
+}
+
+.explore h2 {
+    color: #800020;
+    font-family: "inter";
+}
+
+.explore .landmark {
+    padding: 5px;
+    font-family: "exo2"
+}
+
+.explore .landmark h3 {
+    padding-top: 20px;
+    font-size: 22px;
+    border-top: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.explore .landmark p {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.explore .plan-visit {
+    background-color: #800020;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    width: 120px;
+}
+
+.explore .plan-visit a {
+    text-decoration: none;
+    color: #ffffff;
 }
 
 /*===== Responsive =====*/

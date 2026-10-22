@@ -1,16 +1,11 @@
-*{
-padding: 0;
-margin: 0;
-box-sizing: border-box;
+ * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 
-.body{
-
-  display: grid;
-  
-
-}
+/*
 
 
 
@@ -22,41 +17,122 @@ box-sizing: border-box;
         "header header"
         "main main"
         "footer footer";
-    
+
+    grid-template-rows: auto 1fr auto;
 
 }
 
+
+p{
+font-family: "exo2";
+
+}
 
 .dashboard .main {
     grid-area: main;
     place-items: center;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    display: flex;
+flex-direction: column;
+  
+    place-content: center;
+    height: 60vh;
+    flex-wrap: wrap;
 }
 
- .footer {
+.footer {
     grid-area: footer;
-   
-    
+
+
 }
 
 .dashboard .header {
     grid-area: header;
+
 }
 
-.dashboard .main .plan{
-height: 300px;
-    border: 2px solid black;
-    width:25%;
-   
-   
+.dashboard .main .plan {
+    width: 25%;
+  display: flex;
+    flex-direction: column;
+ place-content: center;
+    margin: 40px;
+  
+   display: inline-block;
+
+    
+
+
+}
+.dashboard .main .plan input {
+    padding: 10px;
     border-radius: 7px;
-    padding: 20px;
-
+width: 100%;
+margin-top: 10px;
+margin-bottom: 10px;
+outline:auto;
+color: gray;
 
 }
 
-.dashboard .main .plan .styling{
-gap: 20px;
 
+
+.dashboard .main .plan .multiAnswer {
+    padding: 10px;
+    border-radius: 7px;
+    width: 100%;
+margin-top: 10px;
+margin-bottom: 10px;
+outline:auto;
+color: gray;
+}
+
+.dashboard .main .plan .plan1 button {
+    padding: 10px;
+    border-radius: 7px;
+    cursor: pointer;
+    background-color: red;
+    border: red;
+    transition: 0.7s ease-in-out;
+    color: white;
+    width: 100%;
+  margin-top: 10px;
+}
+
+button:hover {
+    transform: translateY(-3px);
+
+}
+.dashboard .main .wordsStyling{
+   font-family: "IBM";
+}
+
+.dashboard .main .plan .plan1{
+ border: 2px solid rgba(128, 128, 128, 0.281);
+    border-radius: 7px ;
+    padding: 20px;
+    
+      
+}
+
+
+.dashboard .main iframe {
+    width: 450px;
+    height: 350px;
+    border: 0;
+    border-radius: 7px;
+    
+
+}
+.dashboard .main .cards{
+    place-items: center center;
+    display: flex;
+
+}*/
+
+
+
+
+.dashboard .main .cards .card .profile{
+    
+    width: 20px;
 }
