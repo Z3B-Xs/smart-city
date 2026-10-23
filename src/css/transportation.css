@@ -266,10 +266,10 @@ max-width: 2000px;
 
 
 .dashboard .main .cards .card{
-box-shadow: 3px 1px 20px 4px;
+border:2px solid gray;
 min-height:300px;
 padding: 20px;
-
+transition: 0.7s ;
 }
 
 .dashboard .main .cards .card .profile svg{
@@ -327,3 +327,7 @@ margin-top: 30px;
     transform-origin: left;
 }
 
+.dashboard .main .cards .card:hover{
+    transform: translateY(-5px);
+    box-shadow: 3px 1px 20px 4px;
+}
