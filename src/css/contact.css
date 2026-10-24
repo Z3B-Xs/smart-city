@@ -1,0 +1,161 @@
+h2,p{
+    font-family: "exo2";
+}
+
+.dashboard{
+
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer"
+    ;
+ 
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+
+}
+
+.dashboard .header{
+    grid-area: header;
+}
+
+.dashboard .main{
+grid-area: main;
+display: flex;
+
+justify-content: center;
+  
+}
+
+
+.dashboard .main .contact{
+  box-shadow: 2px 3px 30px 10px;
+    height:70% ;
+    width: 50%;
+   margin-top: 100px;
+border-radius:16px ;
+   padding: 20px;
+   display: flex;
+   
+
+}
+.dashboard .main .contact .form{
+    border: 3px solid gray; 
+    padding: 10px;
+    border-radius:7px ;
+overflow: hidden;
+max-height:100% ;
+}
+
+
+.dashboard .main .contact .form1 {
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+   
+}
+
+.dashboard .main .contact .form1 input{
+    width: 80%;
+border-radius: 7px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 25%;
+  border:3px solid gray ;
+    
+}
+
+.dashboard .main .contact .form .styling{
+display: flex;
+justify-content: space-evenly;
+}
+
+
+.dashboard .main .contact .form .multiAnswer{
+    margin-top: 10px;
+    width: 60%;
+    padding: 10px;
+    border-radius: 7px;
+    margin-bottom: 10px;
+    border: 3px solid gray;
+    
+}
+
+.dashboard .main .contact .input1 {
+margin-top: 10px;
+height: 200px;
+width: 70%;
+padding:5px;
+border-radius: 7px;
+border: 3px solid gray;
+font-family: inherit;
+ resize: vertical;
+ 
+}
+
+
+.dashboard .main .contact .input1::placeholder {
+  position: absolute;
+  top: 5px;
+}
+
+
+.dashboard .main .contact .input1 textarea {
+  position: absolute;
+  top: 5px;
+  
+}
+
+
+.dashboard .footer{
+grid-area: footer;
+
+}
+
+input:focus{
+
+  border-color: aquamarine;
+}
+
+
+.dashboard .main .contact .form button{
+    position: relative;
+      overflow: hidden;
+      z-index: 1;
+      padding: 16px 30px;
+      color: #800020;
+      background: transparent;
+      border: 2px solid #800020;
+      border-radius: 10px;
+      transition: color .25s ease;
+      margin-top: 10px;
+  
+      cursor: pointer;width: 100%;
+}
+
+button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: #800020;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition:
+        transform .3s cubic-bezier(0.65, 0, 0.35, 1);
+        
+}
+
+ .dashboard .main .contact .form button:hover {
+    color: #ffffff;
+}
+
+.dashboard .main .contact .form button:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+
+
