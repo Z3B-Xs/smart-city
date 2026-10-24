@@ -206,7 +206,7 @@ main {
     content: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis nisi quod quisquam modi illo reprehenderit!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis nisi quod quisquam modi illo reprehenderit!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis nisi quod quisquam modi illo reprehenderit!';
     position: absolute;
     inset: 0;
-    background: #000000;
+    background-color: rgba(0, 0, 0, 0.6);
     color: #ffffff;
     font-size: 20px;
     padding: 10px;
