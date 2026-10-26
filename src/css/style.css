@@ -144,17 +144,235 @@ nav a:hover {
 
 footer {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    height: max-content;
     padding: 20px;
-    margin-top: auto;
-    border-top: 2px solid green;
-    background-color: black;
-    color: white;
+    color: #ffffff;
+    background:
+        linear-gradient(
+            to bottom,
+            white 0%,
+            transparent 30%,
+            transparent 70%,
+            white 100%
+        ),
+        url("../../assets/images/AmmanAtNight.jpeg");
+
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-footer p span {
-    background-image: linear-gradient(to right, red, white, green);
-    background-clip: text;
-    color: transparent;
+footer a {
+    text-decoration: none;
+    color: #444;
+    transition: color 0.2s ease;
+}
+
+footer a:hover {
+    color: #b5122b;
+}
+
+.footer-logo img {
+    display: block;
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+}
+
+.main-footer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 20px;
+    width: 100%;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    flex: 1.5;
+    /* min-width: 0; */
+    background-color: transparent;
+}
+
+.left .social-links {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0;
+    background-color: transparent;
+}
+
+.left .social-links .account {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border: 1px solid #00000030;
+    border-radius: 50%;
+    transition: 0.25s ease-in-out;
+}
+
+.left .social-links .account img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.quick-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    flex: 1;
+    min-width: 0;
+    background-color: transparent;
+}
+
+.city-services {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    flex: 1;
+    min-width: 0;
+    background-color: transparent;
+}
+
+.contact-us {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    flex: 1;
+    min-width: 0;
+    background-color: transparent;
+}
+
+.contact-us img {
+    width: 30px;
+}
+
+.footer-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* gap: 16px; */
+    width: 100%;
+    padding: 20px;
+    border-top: 1px solid #00000020;
+    background-color: transparent;
+}
+
+.footer-footer img {
+    width: 25px;
+}
+
+/*===== Responsive =====*/
+
+@media (max-width: 600px) {
+
+    .laptop-header {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        background-color: transparent;
+    }
+
+    .hamburger #menu-toggle {
+        position: absolute;
+        opacity: 0;
+    }
+
+    .hamburger label {
+        position: relative;
+        z-index: 997;
+        color: red;
+        font-size: 26px;
+        cursor: pointer;
+    }
+
+    .side-bar {
+        z-index: 996;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 250px;
+        height: 100vh;
+        background-color: black;
+        transform: translateX(-100%);
+        transition: 0.25s ease-in-out;
+    }
+
+    .side-bar nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 50px;
+    }
+
+    #menu-toggle:checked~.side-bar {
+        transform: translateX(0);
+        transition: transform 0.25s ease-in-out;
+    }
+
+    .logo-container-phone {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo-container-phone img {
+        width: 90px;
+        transition: 0.25s ease-in-out;
+    }
+
+    .logo-container-phone img:hover {
+        transform: scale(1.15);
+    }
+
+    .logo-container-phone h1 {
+        font-size: 26px;
+        color: #ff0000;
+        font-family: "exo2";
+        transition: 0.25s ease-in-out;
+    }
+
+    .logo-container-phone h1 span {
+        color: #ffffff;
+        font-family: "IBM";
+        transition: 0.25s ease-in-out;
+        text-shadow: none;
+    }
+
+    .logo-container-phone h1:hover {
+        color: #00ff00;
+    }
+
+    .logo-container-phone h1:hover span {
+
+        color: #000000;
+        text-shadow: 0 0 5px #ffffff;
+    }
+
+    nav a {
+        margin-left: 0;
+    }
+
 }
