@@ -28,24 +28,29 @@ justify-content: center;
   
 }
 
+.dashboard .main .contact0{
+    place-items: center;
+    width: 100%;
+}
 
 .dashboard .main .contact{
-  box-shadow: 2px 3px 30px 10px;
-    height:70% ;
-    width: 50%;
-   margin-top: 100px;
+ 
+  
+   width: 70%;
+   margin-top: 50px;
+   margin-bottom:30px ;
 border-radius:16px ;
    padding: 20px;
    display: flex;
-   
+  
 
 }
 .dashboard .main .contact .form{
     border: 3px solid gray; 
     padding: 10px;
     border-radius:7px ;
-overflow: hidden;
-max-height:100% ;
+
+width: 60%;
 }
 
 
@@ -80,32 +85,109 @@ justify-content: space-evenly;
     border-radius: 7px;
     margin-bottom: 10px;
     border: 3px solid gray;
-    
+    height: auto;
 }
 
 .dashboard .main .contact .input1 {
 margin-top: 10px;
-height: 200px;
-width: 70%;
+height: 100px;
+width: 100%;
 padding:5px;
 border-radius: 7px;
 border: 3px solid gray;
 font-family: inherit;
  resize: vertical;
+ box-sizing: border-box;
  
 }
 
 
-.dashboard .main .contact .input1::placeholder {
-  position: absolute;
-  top: 5px;
+.dashboard .main .contain{
+margin-left: 10px;
+margin-top:40px ;
+width: 40%;
+height: 300px;
+    border: 3px solid gray;
+    padding: 10px;
+    border-radius: 7px;
+    background-color: rgba(128, 128, 128, 0.489);
 }
 
 
-.dashboard .main .contact .input1 textarea {
-  position: absolute;
-  top: 5px;
-  
+.dashboard .main .contain .cards .card .profile   {
+margin: 5px;
+   display: flex;
+   background-color: #ffffff;
+   border-radius: 7px;
+   height: 50px;
+   padding: 3px;
+}
+
+
+.dashboard .main .contain .cards .card {
+display: flex;
+gap: 5px;
+}
+
+.dashboard .main .contain .cards .card p{
+    padding-top: 15px;
+}
+
+
+.dashboard .main .footerMain{
+width: 70%;
+    display: block;
+    border: 3px solid black;
+    padding: 20px;
+    color:white ;
+    background-color:black ;
+    border-radius:7px ;
+}
+.dashboard .main .footerMain .footer0{
+display: flex;
+justify-content: space-between;
+
+}
+.dashboard .main .footerMain .footer0 button{
+ position: relative;
+      overflow: hidden;
+      z-index: 1;
+      padding: 16px 30px;
+      color: #f0ebec;
+      background: transparent;
+      border: 2px solid #dfdede;
+      border-radius: 10px;
+      transition: color .25s ease;
+      margin-top: 10px;
+    cursor: pointer;width: 25%;
+}
+
+
+.dashboard .main .footerMain .footer0 button::before{
+content: '';
+    position: absolute;
+    inset: 0;
+    background: #86848444;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition:
+        transform .3s cubic-bezier(0.65, 0, 0.35, 1);
+    
+}
+
+
+
+
+.dashboard .main .footerMain .footer0 button:hover{
+  color: #ffffff;
+}
+
+
+.dashboard .main .footerMain .footer0 button:hover::before{
+ 
+    transform: scaleX(1);
+    transform-origin: left;
 }
 
 
@@ -131,8 +213,8 @@ input:focus{
       border-radius: 10px;
       transition: color .25s ease;
       margin-top: 10px;
-  
-      cursor: pointer;width: 100%;
+  width:100%;
+      cursor: pointer;
 }
 
 button::before {
@@ -149,7 +231,7 @@ button::before {
 }
 
  .dashboard .main .contact .form button:hover {
-    color: #ffffff;
+   color: #ffffff;
 }
 
 .dashboard .main .contact .form button:hover::before {
