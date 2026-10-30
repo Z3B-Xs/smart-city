@@ -68,6 +68,13 @@ main {
     gap: 5px;
 }
 
+.info-container .info .infos span {
+    font-size: 40px;
+    background-image: linear-gradient(to right, red, green, black);
+    color: transparent;
+    background-clip: text;
+}
+
 .main2 {
     display: flex;
     flex-direction: column;
@@ -82,23 +89,28 @@ main {
     flex-direction: column;
     gap: 20px;
     border-radius: 10px;
-    width: 350px;
+    width: 700px;
 }
 
 .explore h2 {
+    align-self: center;
     color: #800020;
     font-family: "inter";
 }
 
 .explore .landmark {
-    padding: 5px;
+    /* padding: 5px; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
     font-family: "exo2";
+    border-top: 1px solid rgba(0, 0, 0, 0.4);
 }
 
 .explore .landmark h3 {
-    padding-top: 20px;
+    padding-top: 10px;
     font-size: 22px;
-    border-top: 1px solid rgba(0, 0, 0, 0.4);
+    /* border-top: 1px solid rgba(0, 0, 0, 0.4); */
 }
 
 .explore .landmark p {
@@ -106,7 +118,20 @@ main {
     color: rgba(0, 0, 0, 0.6);
 }
 
+.explore .landmark .image-container img {
+    margin-top: 10px;
+    width: 250px;
+    transition: 0.25s ease-in-out;
+}
+
+.explore .landmark .image-container:hover img{
+    transform: scale(2.5);
+    border: 3px dashed black;
+    border-radius: 15px;
+}
+
 .explore .plan-visit button {
+    width: 100%;
     position: relative;
     overflow: hidden;
     z-index: 1;
@@ -204,7 +229,7 @@ main {
 }
 
 .pic-container .pic .image-container::before {
-    content: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis nisi quod quisquam modi illo reprehenderit!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis nisi quod quisquam modi illo reprehenderit!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis nisi quod quisquam modi illo reprehenderit!';
+    content: '';
     position: absolute;
     inset: 0;
     background-color: rgba(0, 0, 0, 0.6);
@@ -223,4 +248,23 @@ main {
 .pic-container .pic .image-container:hover::before {
     transform: scaleY(1);
     transform-origin: top;
+}
+
+.pic-container .pic .image-container .image-text {
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    color: #ffffff;
+    opacity: 0;
+    transition: opacity .25s ease-in-out;
+}
+
+.pic-container .pic .image-container:hover .image-text {
+    opacity: 1;
 }
