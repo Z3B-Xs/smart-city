@@ -27,11 +27,12 @@
 
 html {
     scroll-behavior: smooth;
+    scrollbar-color: #800020 #000000;
 }
 
 body {
-    background: linear-gradient(to right, rgba(217, 210, 210, 0.956), rgba(64, 52, 52, 0.5));
-    background: linear-gradient(to right, rgba(255, 253, 253, 0.956) ,rgba(240, 238, 238, 0.5));
+    /* background: linear-gradient(to right, #EDE5D8, #E8EFF3); */
+    background-color: #ede5d8;
     min-height: 100vh;
     min-height: 100dvh;
 
@@ -148,7 +149,7 @@ footer {
     align-items: center;
     height: max-content;
     padding: 20px;
-    color: #00ff00;
+    color: #ff0000;
     background:
         linear-gradient(
             to bottom,
@@ -166,7 +167,7 @@ footer {
 
 footer a {
     text-decoration: none;
-    color: #00ff00;
+    color: #ffffff;
     transition: color 0.2s ease;
 }
 

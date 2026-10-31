@@ -1,3 +1,13 @@
+body {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("../../assets/images/royaljordan.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 /*===== History =====*/
 
 main {
@@ -119,12 +129,16 @@ main {
 }
 
 .explore .landmark .image-container img {
+    position: relative;
+    z-index: 1;
     margin-top: 10px;
     width: 250px;
     transition: 0.25s ease-in-out;
 }
 
 .explore .landmark .image-container:hover img{
+    position: relative;
+    z-index: 2;
     transform: scale(2.5);
     border: 3px dashed black;
     border-radius: 15px;
