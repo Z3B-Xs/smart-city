@@ -22,27 +22,10 @@
     object-position: center;
 }
 
-.hero-text {
-    position: absolute;
-    top: 30%;
-    left: 650px;
-    z-index: 2;
-    color: #ffffff;
-}
-
-.hero-text h2 {
-    font-size: 80px;
-}
-
-.hero-text h2 span {
-    display: block;
-    margin-left: 100px;
-}
-
 /*===== Main =====*/
 
 .home-main {
-    padding-top: 100vh;
+    padding-top: 50vh;
 }
 
 .cards-container {
