@@ -1,7 +1,7 @@
 body {
     background-image:
-        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url("../../assets/images/royaljordan.jpeg");
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("../../assets/images/historybackground.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -22,12 +22,25 @@ main {
     flex-direction: column;
 }
 
+.history {
+    color: #ffffff;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+.history p {
+    color: rgba(255, 255, 255, 0.5);
+}
+
 .info-container .info {
     display: flex;
+    color: #ffffff;
+    align-items: stretch;
 }
 
 .info-container .info .circle {
     position: relative;
+    align-self: stretch;
 }
 
 .info-container .info .circle img {
@@ -36,10 +49,10 @@ main {
 
 .info-container .info .first-circle::before {
     content: "";
-    height: 5px;
+    height: 7px;
     width: 4px;
     position: absolute;
-    top: -1px;
+    top: -3px;
     left: 10px;
     background-color: #000000;
     border-top-right-radius: 3px;
@@ -49,28 +62,28 @@ main {
 
 .info-container .info .circle::after {
     content: "";
-    height: 81.5px;
+    height: calc(100% + 34px);
     width: 4px;
     position: absolute;
-    bottom: -34px;
+    top: 21px;
     left: 10px;
     background-color: #000000;
     border-radius: 3px;
     z-index: -1;
 }
 
-/* .info-container .info .last-circle::after {
+.info-container .info .last-circle::after {
     content: "";
-    height: 5px;
+    height: 7px;
     width: 4px;
     position: absolute;
     top: 21px;
     left: 10px;
-    background-color: white;
+    background-color: #000000;
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
     z-index: -1;
-} */
+}
 
 .info-container .info .infos {
     display: flex;
@@ -80,7 +93,14 @@ main {
 
 .info-container .info .infos span {
     font-size: 40px;
-    background-image: linear-gradient(to right, red, green, black);
+    background-image: linear-gradient(to right,
+    green 0%,
+    green 24%,
+    white 25%,
+    white 49%,
+    black 50%,
+    black 74%,
+    red 75%);
     color: transparent;
     background-clip: text;
 }
@@ -89,6 +109,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 45px;
 }
 
 .explore {
@@ -98,7 +119,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     width: 700px;
 }
 
@@ -141,7 +162,7 @@ main {
     z-index: 2;
     transform: scale(2.5);
     border: 3px solid black;
-    border-radius: 15px;
+    /* border-radius: 15px; */
 }
 
 .explore .plan-visit button {
@@ -153,7 +174,7 @@ main {
     color: #800020;
     background: transparent;
     border: 2px solid #800020;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     transition: color .25s ease;
     cursor: pointer;
 }
@@ -229,6 +250,14 @@ main {
     transform-origin: top;
 } */
 
+.pic-container .pic h3 {
+    color: #ffffff;
+    border: 2px solid #800020;
+    /* border-radius: 10px; */
+    background-color: #000000;
+    padding: 10px;
+}
+
 .pic-container .pic img {
     width: 100%;
     height: 500px;
@@ -240,6 +269,7 @@ main {
     transition: color .25s ease;
     overflow: hidden;
     height: 500px;
+    /* border-radius: 15px; */
 }
 
 .pic-container .pic .image-container::before {
