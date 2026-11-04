@@ -161,6 +161,7 @@ section {
 
 section h2 {
     font-size: 38px;
+    color: #800020;
 }
 
 section p {
@@ -185,6 +186,9 @@ section a {
             rgba(0, 0, 0, 0) 70%
     ),
     url("../../assets/images/aboutamman.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 #what-smartcity {
@@ -196,6 +200,9 @@ section a {
             rgba(0, 0, 0, 0) 70%
     ),
     url("../../assets/images/whatissmartcity.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 #vision {
@@ -207,6 +214,9 @@ section a {
             rgba(0, 0, 0, 0) 70%
     ),
     url("../../assets/images/ourvision.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 #aot {
@@ -220,4 +230,5 @@ section a {
     url("../../assets/images/aot.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
+    overflow: hidden;
 }

@@ -90,10 +90,10 @@ header {
     display: block;
     background-image: linear-gradient(90deg,
             #ff0000 0%,
-            #ff0000 29%,
-            #ffffff 35%,
-            #ffffff 60%,
-            #00ff00 66.66%,
+            #ff0000 15%,
+            #ffffff 15%,
+            #ffffff 46%,
+            #00ff00 46%,
             #00ff00 100%);
     color: transparent;
     background-clip: text;
@@ -210,25 +210,14 @@ footer a:hover {
 .left .social-links {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 30px;
     padding: 0;
     background-color: transparent;
 }
 
-.left .social-links .account {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 48px;
-    height: 48px;
-    border: 1px solid #00000030;
-    border-radius: 50%;
-    transition: 0.25s ease-in-out;
-}
-
 .left .social-links .account img {
-    width: 24px;
-    height: 24px;
+    width: 36px;
+    height: 36px;
     object-fit: contain;
 }
 
@@ -338,7 +327,13 @@ footer a:hover {
 }
 
 .footer-footer span {
-    background-image: linear-gradient(to right, white, red, green, white);
+    background-image: linear-gradient(90deg,
+            #ff0000 0%,
+            #ff0000 15%,
+            #ffffff 15%,
+            #ffffff 46%,
+            #00ff00 46%,
+            #00ff00 100%);
     color: transparent;
     background-clip: text;
 
@@ -447,5 +442,64 @@ footer a:hover {
     nav a {
         margin-left: 0;
     }
+
+    /*===== Footer =====*/
+
+footer {
+    padding: 10px;
+    background-size: cover;
+}
+
+.footer-logo img {
+    width: 250px;
+}
+
+.main-footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.left {
+    align-items: center;
+}
+
+.quick-links {
+    align-items: center;
+}
+
+.city-services {
+    align-items: center;
+}
+
+.contact-us {
+    align-items: center;
+}
+
+.contact-us img {
+    width: 30px;
+}
+
+.contact-way {
+    justify-content: center;
+}
+
+.contact-way:has(.email-input) .email-input {
+    justify-content: center;
+}
+
+.contact-way .email-input button {
+    width: 70px;
+}
+
+.contact-way .email-input button:focus::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.footer-footer {
+    margin-top: 20px;
+}
 
 }
