@@ -340,7 +340,14 @@ footer a:hover {
 }
 
 .footer-footer img {
-    width: 25px;
+    position: fixed;
+    top: 94%;
+    left: 97%;
+    background-color: #000000;
+    padding: 8px;
+    border: 2px solid #800020;
+    border-radius: 50%;
+    width: 40px;
 }
 
 /*===== Responsive =====*/
@@ -373,7 +380,8 @@ footer a:hover {
         position: relative;
         z-index: 997;
         color: red;
-        font-size: 26px;
+        top: -25px;
+        font-size: 50px;
         cursor: pointer;
     }
 
