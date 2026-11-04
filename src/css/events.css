@@ -45,8 +45,8 @@ grid-area:footer ;
 }
 
 .dashboard .main .main0{
-border: 3px solid black;
-width: 50%;
+
+ width: min(1100px, 92%);
 height: 100%;
 }
 
@@ -110,7 +110,7 @@ font-size: small;
 
 
 
-.dashboard .main .main0 .feature .cards {
+.dashboard .main .main0 .feature .cont {
    
 
     display: flex;   
@@ -119,7 +119,7 @@ font-size: small;
 
 
 
-.dashboard .main .main0 .feature .cards .icon {
+.dashboard .main .main0 .feature .cont .icon {
 
     margin-right: 10px;
      
@@ -127,7 +127,7 @@ font-size: small;
 
 
 
-.dashboard .main .main0 .feature .cards {
+.dashboard .main .main0 .feature .cont {
     display: flex;
     flex-direction: column;   
     gap: 10px;
@@ -137,15 +137,15 @@ font-size: small;
 
 
 
-.dashboard .main .main0 .feature .cards .row {
+.dashboard .main .main0 .feature .cont .row {
     display: flex;
     align-items: center;   
     gap: 10px;
 }
 
 
-.dashboard .main .main0 .feature .cards .icon,
-.dashboard .main .main0 .feature .cards .location {
+.dashboard .main .main0 .feature .cont .icon,
+.dashboard .main .main0 .feature .cont .location {
     width: 30px;
     height: 30px;
     
@@ -209,5 +209,154 @@ button::before {
     display: block;
     width: 100%;
     height: 100%;
+}
+
+
+.dashboard .main .main0 .cards0{
+    display: flex;
+   
+    justify-content: space-between;
+height: 400px;
+margin-top: 30px;
+gap: 15px;
+
+}
+
+
+
+
+.dashboard .main .main0 .cards0 .card{
+padding: 10px;
+background-color: #ffff;
+
+border-radius: 7px;
+width: 100%;
+position: relative;
+margin-bottom: 15px;
+transition: 0.7s;
+
+}
+
+
+.dashboard .main .main0 .cards0 .card:hover{
+transform: translateY(-5px);
+box-shadow: 2px 5px 5px 5px white;
+}
+
+
+
+.dashboard .main .main0 .cards0 .card .abs{
+z-index: 999;
+position: absolute;
+top: 8px;
+right: 5px;
+background-color: #ffffff;
+padding: 10px;
+border-radius: 16px;
+}
+
+
+.dashboard .main .main0 .cards0 .card .abs1{
+z-index: 999;
+position: absolute;
+top: 8px;
+left: 5px;
+background-color: #ffffff;
+padding: 10px;
+border-radius: 16px;
+width: 60px;
+place-items: center;
+}
+
+
+
+
+
+.dashboard .main .main0 .cards0 .card svg{
+margin-top: 10px;
+background-color: #000;
+  height: 40px;
+border-radius: 19px;
+
+}
+
+
+
+.dashboard .main .main0 .cards0 .card .cont-icon{
+padding: 5px;
+display: flex;
+}
+
+.dashboard .main .main0 .cards0 .card .cont-icon p{
+padding: 10px;
+padding-top: 20px;
+}
+
+
+
+
+.dashboard .main .main0 .cards0 .card img{
+
+width: 100%;
+  border-radius: 10px;
+background-size: cover;
+
+}
+
+.dashboard .main .main0 .cards0 .card .backC .p_change{
+margin: 9px;
+padding-top: 7px;
+justify-items: center;
+border-radius: 7px;
+background-color: lightgreen;
+width: 60px;
+height: 40px;
+
+
+}
+
+.dashboard .main .main0 .cards0 .card .backC {
+
+display: flex;
+justify-content: space-between;
+}
+
+.dashboard .main .main0 .cards0 .card .backC button{
+margin-top: 7px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    padding: 16px 30px;
+    color: #800020;
+    background: transparent;
+    border: 2px solid #800020;
+    border-radius: 10px;
+    transition: color .25s ease;
+    cursor: pointer;
+    width: 50%;
+}
+
+
+
+.dashboard .main .main0 .cards0 .card .backC button::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: #640404;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition:
+        transform .3s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+
+.dashboard .main .main0 .cards0 .card .backC button:hover{
+ color: #d6d0d0;
+}
+
+.dashboard .main .main0 .cards0 .card .backC button:hover::before{
+    transform: scaleX(1);
+    transform-origin: left;
 }
 
