@@ -7,3 +7,22 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
+img {
+    width: 100px;
+}
+
+main .digital-section .key-statistics {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .digital-section .key-statistics .statistic {
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+}
