@@ -12,17 +12,174 @@ img {
     width: 100px;
 }
 
+main {
+    padding: 20px;
+}
+
+main .digital-section .digital-services-head {
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+main .digital-section .digital-services-head h2 {
+    line-height: 50px;
+}
+
+main .digital-section .digital-services-head p {
+    color: #ffffffc2;
+    line-height: 18px;
+}
+
 main .digital-section .key-statistics {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center; */
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
 main .digital-section .key-statistics .statistic {
-    background-color: antiquewhite;
+    background-color: #00000065;
+    /* border: 2px solid #00000049; */
+    border-radius: 15px;
+    box-shadow: 0 0 10px 1px #ffffff;
+    color: #70001c;
+    width: 300px;
+    height: 150px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 30px;
     padding: 20px;
+    transition: .25s ease-in-out;
+}
+
+main .digital-section .key-statistics .statistic:hover {
+    transform: translateY(-7px);
+}
+
+main .digital-section .key-statistics .statistic .green {
+    color: #006600;
+}
+
+main .digital-section .key-statistics .statistic img {
+    width: 70px;
+}
+
+.sanad-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+    padding: 10px;
+    /* height: 800px;
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.5),
+                          rgba(0, 0, 0, 0.5)),
+        url("../../assets/images/sanadimg.jfif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+}
+
+.sanad-section img {
+    width: 40%;
+    margin: 15px;
+}
+
+.sanad-section .digital-identity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.sanad-section .digital-identity .sanad {
+    color: #ffffff;
+}
+
+.sanad-section .digital-identity .sanad h2 {
+    line-height: 50px;
+}
+
+.sanad-section .digital-identity .sanad p {
+    color: #ffffffc2;
+    line-height: 18px;
+}
+
+.sanad-section .digital-identity .sanad-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+.sanad-section .digital-identity .sanad-cards .sanad-card {
+    background-color: #00000065;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 1px #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    color: #ffffff;
+    transition: .25s ease-in-out;
+}
+
+.sanad-section .digital-identity .sanad-cards .sanad-card:hover {
+    transform: translateY(-7px);
+}
+
+.sanad-section .digital-identity .sanad-cards .sanad-card:last-child {
+    grid-column: 1/3;
+    width: 50%;
+    justify-self: center;
+}
+
+.sanad-section .digital-identity .sanad-cards .sanad-card img {
+    width: 70px;
+    margin-bottom: 20px;
+}
+
+.sanad-section .digital-identity button {
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 15px;
+    background-color: #00000065;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.sanad-section .digital-identity button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: #00aa0059;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition:
+        transform .3s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.sanad-section .digital-identity button:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.sanad-section .digital-identity button a {
+    text-decoration: none;
+    color: #00aa00;
+    transition: .25s ease-in-out;
+}
+
+.sanad-section .digital-identity button:hover a {
+    color: #ffffff;
 }
