@@ -8,59 +8,61 @@ body {
     background-attachment: fixed;
 }
 
-h2,p{
+h2,
+p {
     font-family: "exo2";
 }
 
-.dashboard{
+.dashboard {
 
     display: grid;
-    grid-template-areas: 
-    "header header"
-    "main main"
-    "footer footer"
+    grid-template-areas:
+        "header header"
+        "main main"
+        "footer footer"
     ;
- 
-  grid-template-rows: auto 1fr auto;
-  min-height: 100vh;
+
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
 
 }
 
-.dashboard .header{
+.dashboard .header {
     grid-area: header;
 }
 
-.dashboard .main{
-grid-area: main;
-display: flex;
+.dashboard .main {
+    grid-area: main;
+    display: flex;
 
-justify-content: center;
-  
+    justify-content: center;
+
 }
 
-.dashboard .main .contact0{
+.dashboard .main .contact0 {
     place-items: center;
     width: 100%;
 }
 
-.dashboard .main .contact{
- 
-  
-   width: 70%;
-   margin-top: 50px;
-   margin-bottom:30px ;
-border-radius:16px ;
-   padding: 20px;
-   display: flex;
-  
+.dashboard .main .contact {
+
+
+    width: 70%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+
 
 }
-.dashboard .main .contact .form{
-    border: 3px solid gray; 
-    padding: 10px;
-    border-radius:7px ;
 
-width: 60%;
+.dashboard .main .contact .form {
+    border: 3px solid gray;
+    padding: 10px;
+    border-radius: 7px;
+
+    width: 60%;
 }
 
 
@@ -68,27 +70,27 @@ width: 60%;
     margin-top: 10px;
     width: 100%;
     height: 100%;
-   
+
 }
 
-.dashboard .main .contact .form1 input{
+.dashboard .main .contact .form1 input {
     width: 80%;
-border-radius: 7px;
+    border-radius: 7px;
     padding: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
     height: 25%;
-  border:3px solid gray ;
-    
+    border: 3px solid gray;
+
 }
 
-.dashboard .main .contact .form .styling{
-display: flex;
-justify-content: space-evenly;
+.dashboard .main .contact .form .styling {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 
-.dashboard .main .contact .form .multiAnswer{
+.dashboard .main .contact .form .multiAnswer {
     margin-top: 10px;
     width: 60%;
     padding: 10px;
@@ -99,25 +101,25 @@ justify-content: space-evenly;
 }
 
 .dashboard .main .contact .input1 {
-margin-top: 10px;
-min-height: 100px;
-max-height: 250px;
-width: 100%;
-padding:5px;
-border-radius: 7px;
-border: 3px solid gray;
-font-family: inherit;
- resize: vertical;
- box-sizing: border-box;
- 
+    margin-top: 10px;
+    min-height: 100px;
+    max-height: 250px;
+    width: 100%;
+    padding: 5px;
+    border-radius: 7px;
+    border: 3px solid gray;
+    font-family: inherit;
+    resize: vertical;
+    box-sizing: border-box;
+
 }
 
 
-.dashboard .main .contain{
-margin-left: 10px;
-margin-top:40px ;
-width: 40%;
-height: 300px;
+.dashboard .main .contain {
+    margin-left: 10px;
+    margin-top: 40px;
+    width: 40%;
+    height: 300px;
     border: 3px solid gray;
     padding: 10px;
     border-radius: 7px;
@@ -125,57 +127,60 @@ height: 300px;
 }
 
 
-.dashboard .main .contain .cards .card .profile   {
-margin: 5px;
-   display: flex;
-   background-color: #ffffff;
-   border-radius: 7px;
-   height: 50px;
-   padding: 3px;
+.dashboard .main .contain .cards .card .profile {
+    margin: 5px;
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 7px;
+    height: 50px;
+    padding: 3px;
 }
 
 
 .dashboard .main .contain .cards .card {
-display: flex;
-gap: 5px;
+    display: flex;
+    gap: 5px;
 }
 
-.dashboard .main .contain .cards .card p{
+.dashboard .main .contain .cards .card p {
     padding-top: 15px;
 }
 
 
-.dashboard .main .footerMain{
-width: 70%;
+.dashboard .main .footerMain {
+    width: 70%;
     display: block;
     border: 3px solid black;
     padding: 20px;
-    color:white ;
-    background-color:black ;
-    border-radius:7px ;
-}
-.dashboard .main .footerMain .footer0{
-display: flex;
-justify-content: space-between;
-
-}
-.dashboard .main .footerMain .footer0 button{
- position: relative;
-      overflow: hidden;
-      z-index: 1;
-      padding: 16px 30px;
-      color: #f0ebec;
-      background: transparent;
-      border: 2px solid #dfdede;
-      border-radius: 10px;
-      transition: color .25s ease;
-      margin-top: 10px;
-    cursor: pointer;width: 25%;
+    color: white;
+    background-color: black;
+    border-radius: 7px;
 }
 
+.dashboard .main .footerMain .footer0 {
+    display: flex;
+    justify-content: space-between;
 
-.dashboard .main .footerMain .footer0 button::before{
-content: '';
+}
+
+.dashboard .main .footerMain .footer0 button {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    padding: 16px 30px;
+    color: #f0ebec;
+    background: transparent;
+    border: 2px solid #dfdede;
+    border-radius: 10px;
+    transition: color .25s ease;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 25%;
+}
+
+
+.dashboard .main .footerMain .footer0 button::before {
+    content: '';
     position: absolute;
     inset: 0;
     background: #86848444;
@@ -183,49 +188,49 @@ content: '';
     transform: scaleX(0);
     transform-origin: right;
     transition: transform .3s cubic-bezier(0.65, 0, 0.35, 1);
-       
-    
+
+
 }
 
 
 
 
-.dashboard .main .footerMain .footer0 button:hover{
-  color: #ffffff;
+.dashboard .main .footerMain .footer0 button:hover {
+    color: #ffffff;
 }
 
 
-.dashboard .main .footerMain .footer0 button:hover::before{
- 
+.dashboard .main .footerMain .footer0 button:hover::before {
+
     transform: scaleX(1);
     transform-origin: left;
 }
 
 
-.dashboard .footer{
-grid-area: footer;
+.dashboard .footer {
+    grid-area: footer;
 
 }
 
-input:focus{
+input:focus {
 
-  border-color: aquamarine;
+    border-color: aquamarine;
 }
 
 
-.dashboard .main .contact .form button{
+.dashboard .main .contact .form button {
     position: relative;
-      overflow: hidden;
-      z-index: 1;
-      padding: 16px 30px;
-      color: #800020;
-      background: transparent;
-      border: 2px solid #800020;
-      border-radius: 10px;
-      transition: color .25s ease;
-      margin-top: 10px;
-  width:100%;
-      cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+    padding: 16px 30px;
+    color: #800020;
+    background: transparent;
+    border: 2px solid #800020;
+    border-radius: 10px;
+    transition: color .25s ease;
+    margin-top: 10px;
+    width: 100%;
+    cursor: pointer;
 }
 
 button::before {
@@ -238,17 +243,14 @@ button::before {
     transform-origin: right;
     transition:
         transform .3s cubic-bezier(0.65, 0, 0.35, 1);
-        
+
 }
 
- .dashboard .main .contact .form button:hover {
-   color: #ffffff;
+.dashboard .main .contact .form button:hover {
+    color: #ffffff;
 }
 
 .dashboard .main .contact .form button:hover::before {
     transform: scaleX(1);
     transform-origin: left;
 }
-
-
-

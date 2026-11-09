@@ -179,13 +179,11 @@ section a {
 
 #about {
     background:
-    linear-gradient(
-        to right,
+        linear-gradient(to right,
             rgba(0, 0, 0, 0.8) 0%,
             rgba(0, 0, 0, 0.6) 30%,
-            rgba(0, 0, 0, 0) 70%
-    ),
-    url("../../assets/images/aboutamman.jpeg");
+            rgba(0, 0, 0, 0) 70%),
+        url("../../assets/images/aboutamman.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -193,13 +191,11 @@ section a {
 
 #what-smartcity {
     background:
-    linear-gradient(
-        to right,
+        linear-gradient(to right,
             rgba(0, 0, 0, 0.8) 0%,
             rgba(0, 0, 0, 0.6) 30%,
-            rgba(0, 0, 0, 0) 70%
-    ),
-    url("../../assets/images/whatissmartcity.jpeg");
+            rgba(0, 0, 0, 0) 70%),
+        url("../../assets/images/whatissmartcity.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -207,13 +203,11 @@ section a {
 
 #vision {
     background:
-    linear-gradient(
-        to right,
+        linear-gradient(to right,
             rgba(0, 0, 0, 0.8) 0%,
             rgba(0, 0, 0, 0.6) 30%,
-            rgba(0, 0, 0, 0) 70%
-    ),
-    url("../../assets/images/ourvision.jpeg");
+            rgba(0, 0, 0, 0) 70%),
+        url("../../assets/images/ourvision.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -221,13 +215,11 @@ section a {
 
 #aot {
     background:
-    linear-gradient(
-        to right,
+        linear-gradient(to right,
             rgba(0, 0, 0, 0.8) 0%,
             rgba(0, 0, 0, 0.6) 30%,
-            rgba(0, 0, 0, 0) 70%
-    ),
-    url("../../assets/images/aot.jpeg");
+            rgba(0, 0, 0, 0) 70%),
+        url("../../assets/images/aot.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;

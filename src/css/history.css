@@ -94,13 +94,13 @@ main {
 .info-container .info .infos span {
     font-size: 40px;
     background-image: linear-gradient(to right,
-    green 0%,
-    green 24%,
-    white 25%,
-    white 49%,
-    black 50%,
-    black 74%,
-    red 75%);
+            green 0%,
+            green 24%,
+            white 25%,
+            white 49%,
+            black 50%,
+            black 74%,
+            red 75%);
     color: transparent;
     background-clip: text;
 }
@@ -157,7 +157,7 @@ main {
     transition: 0.25s ease-in-out;
 }
 
-.explore .landmark .image-container:hover img{
+.explore .landmark .image-container:hover img {
     position: relative;
     z-index: 2;
     transform: scale(2.5);
