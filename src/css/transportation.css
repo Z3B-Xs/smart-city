@@ -219,7 +219,7 @@ button:hover {
     overflow: hidden;
     z-index: 1;
     padding: 16px 30px;
-    color: #800020;
+    color: #ffffff;
     background: transparent;
     border: 2px solid #800020;
     border-radius: 10px;
@@ -243,7 +243,7 @@ button::before {
 }
 
 .dashboard .main .plan .plan1 button:hover {
-    color: #ffffff;
+    color: #000000;
 }
 
 .dashboard .main .plan .plan1 button:hover::before {
@@ -263,6 +263,7 @@ button::before {
 p,
 h2 {
     font-family: "exo2";
+    color: #ffffff;
 }
 
 .dashboard .main .plan .planCon {
@@ -318,6 +319,7 @@ h2 {
 
 .dashboard .main .cards .card h3 {
     height: 40px;
+    color: #ffffff;
 
 }
 
@@ -327,7 +329,7 @@ h2 {
     overflow: hidden;
     z-index: 1;
     padding: 16px 30px;
-    color: #800020;
+    color: #ffffff;
     background: transparent;
     border: 2px solid #800020;
     border-radius: 10px;
@@ -352,7 +354,7 @@ h2 {
 
 
 .dashboard .main .cards .card button:hover {
-    color: #ffffff;
+    color: #000000;
 }
 
 .dashboard .main .cards .card button:hover::before {
@@ -363,4 +365,47 @@ h2 {
 .dashboard .main .cards .card:hover {
     transform: translateY(-5px);
     box-shadow: 3px 1px 20px 4px;
+}
+
+
+.dashboard .main .cards .card {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    background: transparent;
+}
+
+.dashboard .main .cards .card .card-image {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    opacity: 0;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.7s ease;
+    pointer-events: none;
+}
+
+.dashboard .main .cards .card:hover .card-image {
+    opacity: 1;
+}
+
+.dashboard .main .cards .card:nth-child(1) .card-image {
+    background-image: linear-gradient(#00000088, #00000088),
+                      url("../../assets/images/bus.webp");
+}
+
+.dashboard .main .cards .card:nth-child(2) .card-image {
+    background-image: linear-gradient(#00000088, #00000088),
+                      url("../../assets/images/taxi.webp");
+}
+
+.dashboard .main .cards .card:nth-child(3) .card-image {
+    background-image: linear-gradient(#00000088, #00000088),
+                      url("../../assets/images/parkingbird.webp");
+}
+
+.dashboard .main .cards .card:nth-child(4) .card-image {
+    background-image: linear-gradient(#00000088, #00000088),
+                      url("../../assets/images/active.webp");
 }

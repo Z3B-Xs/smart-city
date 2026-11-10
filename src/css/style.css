@@ -552,9 +552,9 @@ footer a:hover {
     .hamburger label {
         position: relative;
         z-index: 997;
-        color: red;
-        top: -25px;
-        font-size: 50px;
+        color: #800020;
+        top: -15px;
+        font-size: 38px;
         cursor: pointer;
     }
 
