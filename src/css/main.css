@@ -183,7 +183,7 @@ section a {
             rgba(0, 0, 0, 0.8) 0%,
             rgba(0, 0, 0, 0.6) 30%,
             rgba(0, 0, 0, 0) 70%),
-        url("../../assets/images/aboutamman.jpeg");
+        url("../../assets/images/aboutamman.webp");
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -195,7 +195,7 @@ section a {
             rgba(0, 0, 0, 0.8) 0%,
             rgba(0, 0, 0, 0.6) 30%,
             rgba(0, 0, 0, 0) 70%),
-        url("../../assets/images/whatissmartcity.jpeg");
+        url("../../assets/images/whatissmartcity.webp");
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -207,7 +207,7 @@ section a {
             rgba(0, 0, 0, 0.8) 0%,
             rgba(0, 0, 0, 0.6) 30%,
             rgba(0, 0, 0, 0) 70%),
-        url("../../assets/images/ourvision.jpeg");
+        url("../../assets/images/ourvision.webp");
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -219,7 +219,7 @@ section a {
             rgba(0, 0, 0, 0.8) 0%,
             rgba(0, 0, 0, 0.6) 30%,
             rgba(0, 0, 0, 0) 70%),
-        url("../../assets/images/aot.jpeg");
+        url("../../assets/images/aot.webp");
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
