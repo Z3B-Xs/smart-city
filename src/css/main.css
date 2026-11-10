@@ -25,7 +25,7 @@
 /*===== Main =====*/
 
 .home-main {
-    padding-top: 50vh;
+    padding-top: 70vh;
 }
 
 .cards-container {
@@ -155,7 +155,7 @@ section {
     position: relative;
     padding: 25px;
     /* margin: 10px; */
-    max-height: 700px;
+    max-height: 500px;
     text-wrap: wrap;
 }
 
@@ -223,4 +223,182 @@ section a {
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+
+    .cards-container .home-card {
+        width: 240px;
+        min-height: 310px;
+    }
+
+    section .aboutAmman,
+    section .aboutSmartCity,
+    section .aboutVision,
+    section .aboutAOT {
+        width: 65%;
+    }
+
+    section h2 {
+        font-size: 32px;
+    }
+
+    section p {
+        font-size: 21px;
+    }
+
+    section a {
+        font-size: 20px;
+        right: 20px;
+        top: 20px;
+    }
+
+    .home-card:hover,
+    .home-card:focus-within {
+        transform: translateY(-4px);
+    }
+
+    .home-card:hover::before,
+    .home-card:focus-within::before {
+        transform: scaleY(1);
+        transform-origin: top;
+    }
+
+    .home-card:hover .top,
+    .home-card:hover .bottom,
+    .home-card:focus-within .top,
+    .home-card:focus-within .bottom {
+        width: 100%;
+    }
+
+    .home-card:hover .right,
+    .home-card:hover .left,
+    .home-card:focus-within .right,
+    .home-card:focus-within .left {
+        height: 100%;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .home-main {
+        padding-top: 75vh;
+    }
+
+    .cards-container {
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .cards-container .home-card {
+        width: min(100%, 350px);
+        min-height: 280px;
+        margin: 5px;
+    }
+
+    .cards-container .home-card h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .cards-container .home-card p {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    .cards-container .home-card .more a {
+        font-size: 20px;
+    }
+
+    section {
+        padding: 20px;
+        max-height: none;
+        min-height: 400px;
+    }
+
+    section .aboutAmman,
+    section .aboutSmartCity,
+    section .aboutVision,
+    section .aboutAOT {
+        width: 100%;
+    }
+
+    section h2 {
+        font-size: 28px;
+    }
+
+    section p {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    section a {
+        position: static;
+        display: inline-block;
+        margin-top: 20px;
+        font-size: 18px;
+        color: #ff0000;
+    }
+
+    .home-card:hover,
+    .home-card:focus-within {
+        transform: translateY(-4px);
+    }
+
+    .home-card:hover::before,
+    .home-card:focus-within::before {
+        transform: scaleY(1);
+        transform-origin: top;
+    }
+
+    .home-card:hover .top,
+    .home-card:hover .bottom,
+    .home-card:focus-within .top,
+    .home-card:focus-within .bottom {
+        width: 100%;
+    }
+
+    .home-card:hover .right,
+    .home-card:hover .left,
+    .home-card:focus-within .right,
+    .home-card:focus-within .left {
+        height: 100%;
+    }
+
+    #about {
+        background:
+            linear-gradient(rgba(0, 0, 0, 0.7)),
+            url("../../assets/images/aboutamman.webp");
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+
+    #what-smartcity {
+        background:
+            linear-gradient(rgba(0, 0, 0, 0.7)),
+            url("../../assets/images/whatissmartcity.webp");
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+
+    #vision {
+        background:
+            linear-gradient(rgba(0, 0, 0, 0.7)),
+            url("../../assets/images/ourvision.webp");
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+
+    #aot {
+        background:
+            linear-gradient(rgba(0, 0, 0, 0.7)),
+            url("../../assets/images/aot.webp");
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
 }
