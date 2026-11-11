@@ -91,13 +91,13 @@ p {
 
 .dashboard .main .main0 .searchBar .button0 button {
 
-    border-radius: 16px;
-    padding: 10px;
-    margin-top: 10px;
-    border: 3px solid gray;
-    background-color: #ffff;
-    cursor: pointer;
-    transition: 0.7s;
+border-radius: 16px;
+  padding: 10px;
+margin-top: 10px;
+border: 3px solid gray;
+background-color: #ffff;
+cursor: pointer;
+transition: 0.25s;
 }
 
 .dashboard .main .main0 .searchBar .button0 button:focus {
@@ -373,3 +373,9 @@ button::before {
     transform: scaleX(1);
     transform-origin: left;
 }
+
+
+
+
+
+
