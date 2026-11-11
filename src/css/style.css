@@ -375,12 +375,15 @@ footer a:hover {
         opacity: 0;
     }
 
+    .hamburger label img {
+        width: 40px;
+    }
+
     .hamburger label {
         position: relative;
         z-index: 997;
         color: #800020;
-        top: 0;
-        font-size: 38px;
+        top: -10px;
         cursor: pointer;
     }
 
@@ -391,7 +394,10 @@ footer a:hover {
         left: 0;
         width: 250px;
         height: 100vh;
-        background-color: black;
+        background: linear-gradient(135deg, #030303de 30%, #8a0e23de 50%, #0e6b32de 100%);
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;
         transform: translateX(-100%);
         transition: 0.25s ease-in-out;
     }
@@ -410,11 +416,12 @@ footer a:hover {
 
     .logo-container-phone {
         display: flex;
+        flex-direction: column;
         align-items: center;
     }
 
     .logo-container-phone img {
-        width: 90px;
+        width: 100px;
         transition: 0.25s ease-in-out;
     }
 
@@ -423,7 +430,7 @@ footer a:hover {
     }
 
     .logo-container-phone h1 {
-        font-size: 26px;
+        font-size: 25px;
         color: #ff0000;
         font-family: "exo2";
         transition: 0.25s ease-in-out;
@@ -554,9 +561,12 @@ footer a:hover {
         position: relative;
         z-index: 997;
         color: #800020;
-        top: -15px;
-        font-size: 38px;
+        top: -10px;
         cursor: pointer;
+    }
+
+    .hamburger label img {
+        width: 40px;
     }
 
     .side-bar {
@@ -566,7 +576,10 @@ footer a:hover {
         left: 0;
         width: 250px;
         height: 100vh;
-        background-color: black;
+        background: linear-gradient(135deg, #030303de 30%, #8a0e23de 50%, #0e6b32de 100%);
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;
         transform: translateX(-100%);
         transition: 0.25s ease-in-out;
     }
@@ -585,11 +598,12 @@ footer a:hover {
 
     .logo-container-phone {
         display: flex;
+        flex-direction: column;
         align-items: center;
     }
 
     .logo-container-phone img {
-        width: 90px;
+        width: 100px;
         transition: 0.25s ease-in-out;
     }
 
@@ -598,7 +612,7 @@ footer a:hover {
     }
 
     .logo-container-phone h1 {
-        font-size: 26px;
+        font-size: 25px;
         color: #ff0000;
         font-family: "exo2";
         transition: 0.25s ease-in-out;
