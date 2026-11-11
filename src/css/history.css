@@ -1,11 +1,22 @@
 body {
+    background: none;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+
     background-image:
-        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-        url("../../assets/images/historybackground.jpeg");
+        linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)),
+        url("../../assets/images/historybackground.webp");
+
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-repeat: repeat;
+
+    z-index: -1;
 }
 
 /*===== History =====*/
@@ -311,4 +322,169 @@ main {
 
 .pic-container .pic .image-container:hover .image-text {
     opacity: 1;
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+
+    .history {
+        padding: 20px;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main1,
+    main2 {
+        width: 100%;
+    }
+
+    .explore {
+        width: min(100% - 40px, 700px);
+    }
+
+    .pic-container .pic {
+        width: min(100%, 500px);
+    }
+
+    .pic-container .pic .image-container:focus::before {
+        transform: scaleY(1);
+        transform-origin: top;
+    }
+
+    .pic-container .pic .image-container:focus .image-text {
+        opacity: 1;
+    }
+
+    .explore .landmark .image-container:hover img {
+        transform: none;
+        border: none;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .history {
+        padding: 20px;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .main1,
+    .main2 {
+        width: 100%;
+    }
+
+    .history {
+        margin: 20px 15px;
+    }
+
+    .history h2 {
+        font-size: 28px;
+    }
+
+    .history p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .info-container {
+        margin: 5px;
+        padding: 10px;
+    }
+
+    .info-container .info {
+        gap: 12px;
+    }
+
+    .info-container .info .circle {
+        flex: 0 0 25px;
+    }
+
+    .info-container .info .circle img {
+        display: block;
+        width: 25px;
+        height: 25px;
+    }
+
+    .info-container .info .infos p {
+        line-height: 1.5;
+    }
+
+    .info-container .info .infos span {
+        font-size: 28px;
+    }
+
+    .main2 {
+        margin-top: 30px;
+    }
+
+    .explore {
+        width: calc(100% - 20px);
+        margin: 10px;
+    }
+
+    .explore .landmark {
+        gap: 10px;
+        align-items: center;
+    }
+
+    .explore .landmark h3 {
+        font-size: 18px;
+    }
+
+    .explore .landmark .image-container {
+        flex: 0 0 40%;
+    }
+
+    .explore .landmark .image-container img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .pic-container {
+        margin: 10px;
+        gap: 20px;
+    }
+
+    .pic-container .pic {
+        width: 100%;
+    }
+
+    .pic-container .pic .image-container {
+        width: 100%;
+        height: 350px;
+    }
+
+    .pic-container .pic img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .pic-container .pic .image-container .image-text {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .pic-container .pic .image-container:focus::before {
+        transform: scaleY(1);
+        transform-origin: top;
+    }
+
+    .pic-container .pic .image-container:focus .image-text {
+        opacity: 1;
+    }
+
+    .explore .landmark .image-container:hover img {
+        transform: none;
+        border: none;
+    }
+
 }

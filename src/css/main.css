@@ -25,19 +25,15 @@
 /*===== Main =====*/
 
 .home-main {
-    padding-top: 50vh;
+    padding-top: 70vh;
 }
 
 .cards-container {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    /* margin: 10px; */
-    background-color: transparent;
-    /* box-shadow: 0 -15px 25px rgba(255, 255, 255, 1); */
 }
 
 .cards-container .home-card {
@@ -45,27 +41,50 @@
     box-sizing: border-box;
     overflow: hidden;
     z-index: 1;
-    background: #ffffff;
-    transition: transform .4s ease;
-    box-shadow: 0 0 0 1px #ffffff,
-        0 14px 28px -14px #ffffff;
-    color: #ff0000;
+    background: #fff;
+    box-shadow: 0 0 0 1px #fff,
+                0 14px 28px -14px #fff;
     padding: 20px;
     min-height: 310px;
     width: 250px;
     margin: 10px;
+    transition: transform .4s ease;
 }
 
 .home-card::before {
-    content: '';
+    content: "";
     position: absolute;
     inset: 0;
-    background: #000000;
     z-index: -1;
-    transform: scaleY(0);
-    transform-origin: bottom;
-    transition:
-        transform 0.45s cubic-bezier(0.65, 0, 0.35, 1);
+    background-size: 100% 100%, cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity .45s ease-in-out;
+}
+
+.home-card:nth-child(1)::before {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),
+        url("../../assets/images/aboutammancard.webp");
+}
+
+.home-card:nth-child(2)::before {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),
+        url("../../assets/images/whatissmartcitycard.webp");
+}
+
+.home-card:nth-child(3)::before {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),
+        url("../../assets/images/ourvisioncard.webp");
+}
+
+.home-card:nth-child(4)::before {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),
+        url("../../assets/images/aotcard.webp");
 }
 
 .home-card:hover {
@@ -73,22 +92,38 @@
 }
 
 .home-card:hover::before {
-    transform: scaleY(1);
-    transform-origin: top;
+    opacity: 1;
 }
 
 .cards-container .home-card h2 {
-    color: #000000;
+    color: #000;
+    transition: opacity .45s ease-in-out;
 }
 
 .cards-container .home-card p {
-    color: #ffffff;
+    font-size: 20px;
+    color: #fff;
+    transition: opacity .45s ease-in-out;
+}
+
+.home-card:hover h2 {
+    opacity: 0;
+}
+
+.home-card p,
+.home-card a {
+    opacity: 0;
+}
+
+.home-card:hover p,
+.home-card:hover a {
+    opacity: 1;
 }
 
 .line {
     position: absolute;
     background: #800020;
-    transition: all .25s ease;
+    transition: width .25s ease, height .25s ease;
 }
 
 .top {
@@ -133,9 +168,11 @@
     bottom: 15px;
     left: 15px;
     text-decoration: none;
-    color: #ffffff;
+    color: #ff0000;
     font-size: 18px;
+    transition: opacity .45s ease-in-out;
 }
+
 
 section {
     border-top: 1px solid #ffffff;
@@ -155,7 +192,7 @@ section {
     position: relative;
     padding: 25px;
     /* margin: 10px; */
-    max-height: 700px;
+    max-height: 500px;
     text-wrap: wrap;
 }
 
@@ -183,7 +220,7 @@ section a {
             rgba(0, 0, 0, 0.8) 0%,
             rgba(0, 0, 0, 0.6) 30%,
             rgba(0, 0, 0, 0) 70%),
-        url("../../assets/images/aboutamman.jpeg");
+        url("../../assets/images/aboutamman.webp");
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -195,7 +232,7 @@ section a {
             rgba(0, 0, 0, 0.8) 0%,
             rgba(0, 0, 0, 0.6) 30%,
             rgba(0, 0, 0, 0) 70%),
-        url("../../assets/images/whatissmartcity.jpeg");
+        url("../../assets/images/whatissmartcity.webp");
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -207,7 +244,7 @@ section a {
             rgba(0, 0, 0, 0.8) 0%,
             rgba(0, 0, 0, 0.6) 30%,
             rgba(0, 0, 0, 0) 70%),
-        url("../../assets/images/ourvision.jpeg");
+        url("../../assets/images/ourvision.webp");
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -219,8 +256,186 @@ section a {
             rgba(0, 0, 0, 0.8) 0%,
             rgba(0, 0, 0, 0.6) 30%,
             rgba(0, 0, 0, 0) 70%),
-        url("../../assets/images/aot.jpeg");
+        url("../../assets/images/aot.webp");
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+
+    .cards-container .home-card {
+        width: 240px;
+        min-height: 310px;
+    }
+
+    section .aboutAmman,
+    section .aboutSmartCity,
+    section .aboutVision,
+    section .aboutAOT {
+        width: 65%;
+    }
+
+    section h2 {
+        font-size: 32px;
+    }
+
+    section p {
+        font-size: 21px;
+    }
+
+    section a {
+        font-size: 20px;
+        right: 20px;
+        top: 20px;
+    }
+
+    .home-card:hover,
+    .home-card:focus-within {
+        transform: translateY(-4px);
+    }
+
+    .home-card:hover::before,
+    .home-card:focus-within::before {
+        transform: scaleY(1);
+        transform-origin: top;
+    }
+
+    .home-card:hover .top,
+    .home-card:hover .bottom,
+    .home-card:focus-within .top,
+    .home-card:focus-within .bottom {
+        width: 100%;
+    }
+
+    .home-card:hover .right,
+    .home-card:hover .left,
+    .home-card:focus-within .right,
+    .home-card:focus-within .left {
+        height: 100%;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .home-main {
+        padding-top: 75vh;
+    }
+
+    .cards-container {
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .cards-container .home-card {
+        width: min(100%, 350px);
+        min-height: 280px;
+        margin: 5px;
+    }
+
+    .cards-container .home-card h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .cards-container .home-card p {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    .cards-container .home-card .more a {
+        font-size: 20px;
+    }
+
+    section {
+        padding: 20px;
+        max-height: none;
+        min-height: 400px;
+    }
+
+    section .aboutAmman,
+    section .aboutSmartCity,
+    section .aboutVision,
+    section .aboutAOT {
+        width: 100%;
+    }
+
+    section h2 {
+        font-size: 28px;
+    }
+
+    section p {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    section a {
+        position: static;
+        display: inline-block;
+        margin-top: 20px;
+        font-size: 18px;
+        color: #ff0000;
+    }
+
+    .home-card:hover,
+    .home-card:focus-within {
+        transform: translateY(-4px);
+    }
+
+    .home-card:hover::before,
+    .home-card:focus-within::before {
+        transform: scaleY(1);
+        transform-origin: top;
+    }
+
+    .home-card:hover .top,
+    .home-card:hover .bottom,
+    .home-card:focus-within .top,
+    .home-card:focus-within .bottom {
+        width: 100%;
+    }
+
+    .home-card:hover .right,
+    .home-card:hover .left,
+    .home-card:focus-within .right,
+    .home-card:focus-within .left {
+        height: 100%;
+    }
+
+    #about {
+        background:
+            linear-gradient(rgba(0, 0, 0, 0.7)),
+            url("../../assets/images/aboutamman.webp");
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+
+    #what-smartcity {
+        background:
+            linear-gradient(rgba(0, 0, 0, 0.7)),
+            url("../../assets/images/whatissmartcity.webp");
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+
+    #vision {
+        background:
+            linear-gradient(rgba(0, 0, 0, 0.7)),
+            url("../../assets/images/ourvision.webp");
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+
+    #aot {
+        background:
+            linear-gradient(rgba(0, 0, 0, 0.7)),
+            url("../../assets/images/aot.webp");
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
 }

@@ -157,7 +157,7 @@ footer {
             rgba(0, 0, 0, 0.5) 30%,
             rgba(0, 0, 0, 0.5) 70%,
             rgba(0, 0, 0, 0.5) 100%),
-        url("../../assets/images/AmmanAtNight.jpeg");
+        url("../../assets/images/AmmanAtNight.webp");
 
     background-size: 100% 100%;
     background-position: center;
@@ -339,8 +339,8 @@ footer a:hover {
 
 .footer-footer img {
     position: fixed;
-    top: 94%;
-    left: 97%;
+    top: 93%;
+    left: 95%;
     background-color: #000000;
     padding: 8px;
     border: 2px solid #800020;
@@ -349,6 +349,181 @@ footer a:hover {
 }
 
 /*===== Responsive =====*/
+
+@media (min-width: 601px) and (max-width: 900px) {
+    
+    .laptop-header {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        background-color: transparent;
+    }
+
+    .hamburger #menu-toggle {
+        position: absolute;
+        opacity: 0;
+    }
+
+    .hamburger label {
+        position: relative;
+        z-index: 997;
+        color: #800020;
+        top: 0;
+        font-size: 38px;
+        cursor: pointer;
+    }
+
+    .side-bar {
+        z-index: 996;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 250px;
+        height: 100vh;
+        background-color: black;
+        transform: translateX(-100%);
+        transition: 0.25s ease-in-out;
+    }
+
+    .side-bar nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 50px;
+    }
+
+    #menu-toggle:checked~.side-bar {
+        transform: translateX(0);
+        transition: transform 0.25s ease-in-out;
+    }
+
+    .logo-container-phone {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo-container-phone img {
+        width: 90px;
+        transition: 0.25s ease-in-out;
+    }
+
+    .logo-container-phone img:hover {
+        transform: scale(1.15);
+    }
+
+    .logo-container-phone h1 {
+        font-size: 26px;
+        color: #ff0000;
+        font-family: "exo2";
+        transition: 0.25s ease-in-out;
+    }
+
+    .logo-container-phone h1 span {
+        color: #ffffff;
+        font-family: "IBM";
+        transition: 0.25s ease-in-out;
+        text-shadow: none;
+    }
+
+    .logo-container-phone h1:hover {
+        color: #00ff00;
+    }
+
+    .logo-container-phone h1:hover span {
+
+        color: #000000;
+        text-shadow: 0 0 5px #ffffff;
+    }
+
+    nav a {
+        margin-left: 0;
+    }
+
+    /*===== Footer =====*/
+
+    footer {
+        padding: 10px;
+        background-size: cover;
+    }
+
+    .footer-logo img {
+        width: 250px;
+    }
+
+    .main-footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding: 10px;
+    }
+
+    .left {
+        align-items: center;
+    }
+
+    .quick-links {
+        align-items: center;
+    }
+
+    .city-services {
+        align-items: center;
+    }
+
+    .contact-us {
+        align-items: center;
+    }
+
+    .contact-us img {
+        width: 30px;
+    }
+
+    .contact-way {
+        justify-content: center;
+    }
+
+    .contact-way:has(.email-input) .email-input {
+        justify-content: center;
+    }
+
+    .contact-way .email-input button {
+        width: 70px;
+    }
+
+    .contact-way .email-input button:focus::before {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+
+    .footer-footer {
+        margin-top: 20px;
+    }
+
+    .footer-footer img {
+    position: fixed;
+    bottom: 15px;
+    right: 5px;
+    top: auto;
+    left: auto;
+    z-index: 999;
+    background-color: #000000;
+    padding: 8px;
+    border: 2px solid #800020;
+    border-radius: 50%;
+    width: 40px;
+    z-index: 999;
+    }
+
+}
 
 @media (max-width: 600px) {
 
@@ -377,9 +552,9 @@ footer a:hover {
     .hamburger label {
         position: relative;
         z-index: 997;
-        color: red;
-        top: -25px;
-        font-size: 50px;
+        color: #800020;
+        top: -15px;
+        font-size: 38px;
         cursor: pointer;
     }
 
@@ -508,4 +683,19 @@ footer a:hover {
         margin-top: 20px;
     }
 
-}
+    .footer-footer img {
+    position: fixed;
+    bottom: 15px;
+    right: 5px;
+    top: auto;
+    left: auto;
+    z-index: 999;
+    background-color: #000000;
+    padding: 8px;
+    border: 2px solid #800020;
+    border-radius: 50%;
+    width: 40px;
+    z-index: 999;
+    }
+
+} 
