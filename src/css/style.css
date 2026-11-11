@@ -58,7 +58,7 @@ header {
     justify-content: space-between;
     border-bottom: 2px solid #ffffff;
     padding: 10px;
-    background: linear-gradient(135deg, #03030398 50%, #8a0e23c4 85%, #0e6b32a3 100%) !important;
+    background: linear-gradient(135deg, #03030398 50%, #8a0e23c4 85%, #0e6b32a3 100%);
 }
 
 .logo-container {
@@ -293,6 +293,7 @@ footer a:hover {
     border: 2px solid #ff0000;
     border-radius: 7px;
     transition: transform .25s ease-in-out;
+    cursor: pointer;
 }
 
 .contact-way .email-input button::before {
