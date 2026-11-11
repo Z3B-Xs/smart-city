@@ -409,3 +409,103 @@ h2 {
     background-image: linear-gradient(#00000088, #00000088),
                       url("../../assets/images/active.webp");
 }
+
+
+
+
+
+@media (min-width: 601px) and (max-width:900px) {
+    .dashboard .main {
+        padding: 25px;
+    }
+ 
+    .dashboard .main .hStyle {
+        margin: 0;
+    }
+ 
+    .dashboard .main .plan {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+    }
+ 
+    .dashboard .main .plan .planCon {
+        flex: none;
+        max-width: none;
+        margin: 20px 0;
+    }
+ 
+    .dashboard .main .plan .planCon .wordsStyling {
+        padding:  20px;
+    }
+ 
+    .dashboard .main .plan .plan1 {
+       margin-left: 23px;
+        width: 90%;
+    }
+ 
+    .dashboard .main .plan .map {
+        flex: none;
+        height: 360px;
+        margin: 20px;
+    }
+ 
+    .dashboard .main .cards {
+       padding: 30px;
+       flex-direction: column;
+    }
+
+.dashboard .main .cards .card {
+   font-size: 12px;
+    }
+
+
+
+}
+
+
+
+@media (max-width: 600px) {
+    .dashboard .main {
+        padding: 12px;
+       
+    }
+ 
+    .dashboard .main .plan .plan1 h2 {
+        margin-bottom: 20px;
+    }
+ 
+    .dashboard .main .plan .plan1 input,
+    .dashboard .main .plan .plan1 .multiAnswer {
+        margin-bottom: 20px;
+    }
+ 
+    .dashboard .main .plan .plan1 button,
+    .dashboard .main .cards .card button {
+        padding: 14px 20px;
+    }
+ 
+    .dashboard .main .plan .map {
+        height: 280px;
+    }
+ 
+ .dashboard .main .plan  {
+     flex-direction: column;   
+    }
+ 
+
+
+
+    .dashboard .main .cards {
+      flex-direction: column;
+        gap: 16px;
+        margin-top: 200px;
+    }
+ 
+    .dashboard .main .cards .card {
+        min-height: 0;
+    }
+}
+
+
+
