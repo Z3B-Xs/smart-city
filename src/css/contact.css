@@ -74,8 +74,8 @@ p {
     border: 3px solid gray;
     padding: 10px;
     border-radius: 7px;
-
     width: 60%;
+    color: #ffffff;
 }
 
 
@@ -266,4 +266,187 @@ button::before {
 .dashboard .main .contact .form button:hover::before {
     transform: scaleX(1);
     transform-origin: left;
+}
+
+@media (max-width: 900px) {
+
+    .dashboard .main .contact {
+        width: 95%;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .dashboard .main .contact .form {
+        width: 60%;
+        min-width: 0;
+    }
+
+    .dashboard .main .contain {
+        width: 40%;
+        min-width: 0;
+        margin-left: 0;
+        height: auto;
+        align-self: flex-start;
+    }
+
+    .dashboard .main .contact .form1 input {
+        width: 95%;
+        height: auto;
+    }
+
+    .dashboard .main .contact .form .multiAnswer {
+        width: 100%;
+    }
+
+    .dashboard .main .contain .cards .card {
+        align-items: center;
+        overflow-wrap: anywhere;
+    }
+
+    .dashboard .main .contain .cards .card p {
+        padding-top: 0;
+        font-size: 13px;
+    }
+
+    .dashboard .main .footerMain {
+        width: 95%;
+    }
+
+    .dashboard .main .footerMain .footer0 button {
+        width: auto;
+        min-width: 130px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .dashboard .main .contact0 {
+        width: 100%;
+    }
+
+    .dashboard .main .contact {
+        width: 95%;
+        flex-direction: column;
+        padding: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        gap: 20px;
+    }
+
+    .dashboard .main .contact .form {
+        width: 100%;
+        padding: 15px;
+        margin-top: 10px;
+    }
+
+    .dashboard .main .contact .form h2 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .dashboard .main .contact .form p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .dashboard .main .contact .form .styling {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .dashboard .main .contact .form1 {
+        width: 100%;
+        height: auto;
+    }
+
+    .dashboard .main .contact .form1 input {
+        width: 100%;
+        height: auto;
+        padding: 12px;
+    }
+
+    .dashboard .main .contact .form .multiAnswer {
+        width: 100%;
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .dashboard .main .contact .input1 {
+        width: 100%;
+        min-height: 130px;
+        max-height: 250px;
+        padding: 10px;
+    }
+
+    .dashboard .main .contact .form button {
+        width: 100%;
+        padding: 14px;
+    }
+
+    .dashboard .main .contain {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 15px;
+    }
+
+    .dashboard .main .contain h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .dashboard .main .contain .cards .card {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    .dashboard .main .contain .cards .card .profile {
+        flex-shrink: 0;
+        width: 50px;
+        height: 50px;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .dashboard .main .contain .cards .card .profile svg {
+        width: 35px;
+        height: 35px;
+    }
+
+    .dashboard .main .contain .cards .card p {
+        padding-top: 0;
+        font-size: 13px;
+        overflow-wrap: anywhere;
+    }
+
+    .dashboard .main .footerMain {
+        width: 95%;
+        padding: 15px;
+        margin-bottom: 25px;
+    }
+
+    .dashboard .main .footerMain .footer0 {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .dashboard .main .footerMain .footer0 h2 {
+        font-size: 20px;
+    }
+
+    .dashboard .main .footerMain .footer0 button {
+        width: 100%;
+        margin-top: 0;
+        padding: 12px;
+    }
+
+    .dashboard .main .footerMain p {
+        font-size: 13px;
+        line-height: 1.6;
+        margin-top: 10px;
+    }
 }
