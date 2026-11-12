@@ -422,15 +422,11 @@ footer a:hover {
 
     .logo-container-phone img {
         width: 100px;
-        transition: 0.25s ease-in-out;
-    }
-
-    .logo-container-phone img:hover {
-        transform: scale(1.15);
     }
 
     .logo-container-phone h1 {
-        font-size: 25px;
+        font-size: 23px;
+        margin-right: 15px;
         color: #ff0000;
         font-family: "exo2";
         transition: 0.25s ease-in-out;
@@ -604,15 +600,11 @@ footer a:hover {
 
     .logo-container-phone img {
         width: 100px;
-        transition: 0.25s ease-in-out;
-    }
-
-    .logo-container-phone img:hover {
-        transform: scale(1.15);
     }
 
     .logo-container-phone h1 {
-        font-size: 25px;
+        font-size: 23px;
+        margin-right: 10px;
         color: #ff0000;
         font-family: "exo2";
         transition: 0.25s ease-in-out;

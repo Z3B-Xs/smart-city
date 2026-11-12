@@ -165,15 +165,16 @@ main {
     z-index: 1;
     margin-top: 10px;
     width: 250px;
-    transition: 0.25s ease-in-out;
+    transition: .35s ease-in-out;
+    border: none;
+    filter: grayscale(100%);
 }
 
 .explore .landmark .image-container:hover img {
     position: relative;
     z-index: 2;
-    transform: scale(2.5);
-    border: 3px solid black;
-    /* border-radius: 15px; */
+    transform: scale(2);
+    filter: grayscale(0);
 }
 
 .explore .plan-visit button {
@@ -228,38 +229,9 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* border: 2px solid #000000; */
-    /* border-radius: 13px; */
-    /* background-color: rgba(0, 0, 0, 0.7); */
     padding: 10px;
     gap: 10px;
-
-    /* position: relative;
-    z-index: 1;
-    transition: color .25s ease; */
 }
-
-/* .pic-container .pic::before {
-    content: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis nisi quod quisquam modi illo reprehenderit!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis nisi quod quisquam modi illo reprehenderit!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis nisi quod quisquam modi illo reprehenderit!';
-    position: absolute;
-    inset: 0;
-    background: #000000;
-    color: #ffffff;
-    font-size: 20px;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 10px;
-    z-index: 2;
-    transform: scaleY(0);
-    transform-origin: bottom;
-    transition:
-        transform .3s cubic-bezier(0.65, 0, 0.35, 1);
-}  */
-
-/* .pic-container .pic:hover::before {
-    transform: scaleY(1);
-    transform-origin: top;
-} */
 
 .pic-container .pic h3 {
     color: #ffffff;
@@ -335,8 +307,8 @@ main {
         align-items: center;
     }
 
-    main1,
-    main2 {
+    .main1,
+    .main2 {
         width: 100%;
     }
 
